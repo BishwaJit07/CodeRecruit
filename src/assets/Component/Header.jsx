@@ -24,15 +24,15 @@ const Header = () => {
       </ul>
     </div>
 
-    <Link to='/' className=" font-bold text-xl text-accent	">Hire Programmer</Link>
+    <Link to='/' className=" font-bold text-2xl text-accent	">Hire Programmer</Link>
 
     
   </div>
  
-  <div className="navbar-end">
+  <div className="navbar-end font-bold">
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-3">
-    <li><Link to='/' className='mx-2 hover:'>Home</Link></li>
+    <li><Link to='/' className='mx-2 '>Home</Link></li>
     <li><Link to="/statistics" className='mx-2 '>Statistics</Link></li>
         <li tabIndex={0}>
           <Link to='/AppliedJobs' className="justify-between">
@@ -47,7 +47,7 @@ const Header = () => {
   </div>
   </div>
   <div className="navbar-end mr-5">
-    <a className="btn">Get started</a>
+    <Link className="btn bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 text-cyan-100">Get started</Link>
   </div>
 </nav>
     );
