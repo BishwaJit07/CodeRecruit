@@ -4,27 +4,28 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
   themes: [
     {
       mytheme: {
       
-"primary": "#d8635d",
+"primary": "#570DF8",
       
-"secondary": "#38147f",
+"secondary": "#F000B8",
       
-"accent": "#a1f4c1",
+"accent": "#37CDBE",
       
-"neutral": "#1F282E",
+"neutral": "#3D4451",
       
-"base-100": "#242F42",
+"base-100": "#FFFFFF",
       
-"info": "#9DAEEC",
+"info": "#3ABFF8",
       
-"success": "#3BE39D",
+"success": "#36D399",
       
-"warning": "#956B09",
+"warning": "#FBBD23",
       
-"error": "#F73126",
+"error": "#F87272",
       },
     },
   ],
