@@ -8,7 +8,7 @@ import JobDetails from './JobDetails';
 
 const Home = () => {
   const data = useLoaderData(); 
-  const [job,setJob]=useState(data.slice(0,4));
+  const [job,setJob]=useState(data.slice(0,9));
   console.log(job);
 
   
@@ -72,11 +72,13 @@ const Home = () => {
                    </div>
           </div>
 
-                <div> 
+              <div className='flex justify-center items-center'>
+              <div className='grid lg:grid-cols-3 gap-10 md:grid-cols-2 sm:grid-cols-1 '> 
                 {job.map((item) => (
         <JobDetails key={item.id} job={item} />
       ))}
                 </div>
+              </div>
 
     </div>
        

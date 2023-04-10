@@ -20,8 +20,8 @@
       {
         "id": 2,
         "company_logo": "https://i.ibb.co/fGq9gp4/oie-919349t-KDax-IUy.png",
-        "job_title": "Beyond Code",
-        "company_name": "Beta Corp.",
+        "job_title": "Frontend Developer",
+        "company_name": "Beyond Code",
         "remote_or_onsite": "Onsite",
         "location": "San Francisco, CA",
         "fulltime_or_parttime": "Full-time",
@@ -91,7 +91,7 @@
       },
       {
         "id": 6,
-        "company_logo": "https://i.ibb.co/XpKvTJN/oie-USic-SQR80-S7-H.png",
+        "company_logo": "https://i.ibb.co/744HLZ5/oie-wsk-TWEHVGgkn.png",
         "job_title": "DevOps Engineer",
         "company_name": "Vampirebyte.ro",
         "remote_or_onsite": "Onsite",
@@ -105,6 +105,60 @@
         "contact_information": {
           "phone": "555-9012",
           "email": "jobs@definc.com"
+        }
+      },
+      {
+        "id": 7,
+        "company_logo": "https://i.ibb.co/tPZmzwH/oie-lv-YNB4-St-PNz-U.jpg",
+        "job_title": "Front-End Web Developer",
+        "company_name": "Nager",
+        "remote_or_onsite": "Remote",
+        "location": "Anywhere",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "Negotiable",
+        "job_description": "We are seeking a talented front-end web developer to join our team. You will be responsible for developing and maintaining high-quality web applications using modern web technologies.",
+        "job_responsibility": "Develop and maintain high-quality web applications using HTML, CSS, JavaScript, and other web technologies.",
+        "educational_requirements": "Bachelor's degree in computer science or a related field.",
+        "experiences": "2+ years of experience in front-end web development.",
+        "contact_information": {
+          "phone": "+1 123-456-7890",
+          "email": "hr@abccompany.com"
+        }
+      },
+      {
+        "id": 8,
+        "company_logo": "https://i.ibb.co/5nb1fHW/oie-h7knm-RQc4d-RC.png",
+        "job_title": "UI/UX Designer",
+        "company_name": "SysCraft Inc.",
+        "remote_or_onsite": "Onsite",
+        "location": "San Francisco, CA",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$90,000 - $110,000",
+        "job_description": "We are seeking a talented UI/UX designer to join our team. You will be responsible for designing and improving user interfaces for our web and mobile applications.",
+        "job_responsibility": "Design and improve user interfaces for web and mobile applications. Collaborate with product managers and developers to understand user needs and design solutions that meet those needs.",
+        "educational_requirements": "Bachelor's degree in design or a related field.",
+        "experiences": "3+ years of experience in UI/UX design.",
+        "contact_information": {
+          "phone": "+1 123-456-7890",
+          "email": "hr@xyzinc.com"
+        }
+      },
+      {
+        "id": 9,
+        "company_logo": "https://i.ibb.co/3RTZ4Xz/oie-1093728jl8l-IFXA.png",
+        "job_title": "Back-End Web Developer",
+        "company_name": "Radio Active",
+        "remote_or_onsite": "Onsite",
+        "location": "New York, NY",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$100,000 - $120,000",
+        "job_description": "We are seeking a talented back-end web developer to join our team. You will be responsible for developing and maintaining server-side applications and APIs.",
+        "job_responsibility": "Develop and maintain server-side applications and APIs using modern web technologies.",
+        "educational_requirements": "Bachelor's degree in computer science or a related field.",
+        "experiences": "3+ years of experience in back-end web development.",
+        "contact_information": {
+          "phone": "+1 123-456-7890",
+          "email": "hr@acmecorp.com"
         }
       }
 ]
