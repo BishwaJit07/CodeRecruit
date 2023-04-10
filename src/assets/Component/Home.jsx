@@ -8,7 +8,7 @@ import JobDetails from './JobDetails';
 
 const Home = () => {
   const data = useLoaderData(); 
-  const [job,setJob]=useState(data.slice(0,9));
+  const [job,setJob]=useState(data.slice(0,6));
   console.log(job);
 
   
@@ -25,7 +25,7 @@ const Home = () => {
            <div >
             <h2 className='my-5 mx-3 text-5xl font-bold text-cyan-50'>Looking for a <span className=' text-red-500'>Programming Job?</span> Look No Further !</h2>
             <p className='mt-5 mx-6 text-slate-100	 text-2xl '>Welcome to our programming job website, the ultimate resource for job seekers in the tech industry. <br /> We are dedicated to helping talented programmers find the right job that suits their skills and experience.</p><br />
-            <button class="btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 mx-5">Get Started</button>
+            <button className="btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 mx-5">Get Started</button>
            </div>
            <img src="https://i.ibb.co/frhQwzc/pngwing-com-1.png" alt="Programmer" className='w-3/5	 h-2/5 my-2 ' />
         </div>
@@ -77,9 +77,12 @@ const Home = () => {
                 {job.map((item) => (
         <JobDetails key={item.id} job={item} />
       ))}
+    
                 </div>
               </div>
-
+             <div className='flex justify-center my-4'> <button className="btn btn-info   bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 p-2 m-2 onClick={showAll}"> See All Jobs</button>
+             
+</div>
     </div>
        
 
