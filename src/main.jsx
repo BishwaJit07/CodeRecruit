@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,13 +13,16 @@ import Blog from './assets/Component/Blog';
 import AppliedJobs from './assets/Component/AppliedJobs';
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout/>,
     children:[
       {path:"/",
-         element:<Home/>},
+         element:<Home/>,
+         loader:()=>fetch('database.json')
+         },
       {
         path: "/AppliedJobs",
     element: <AppliedJobs/>,
