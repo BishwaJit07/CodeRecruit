@@ -8,19 +8,21 @@ import JobDetails from './JobDetails';
 
 const Home = () => {
   const data = useLoaderData(); 
-  const [job,setJob]=useState(data.slice(0,6));
+  const [job,setJob]=useState({});
   console.log(job);
 
   
 
    
-  const showAll= ()=>{
-    setJob(data)
-  }
+  const [showAll,setShowAll] = useState(false);
+  const handleShowAll = () => {
+    setShowAll(true);
+  };
+
     return ( 
-    <div>
+    <div className='mx-3'>
  
- <div className='flex justify-center items-center mx-16 my-4'>
+ <div className='flex flex-col md:flex-row lg:flex-row justify-center items-center mx-16 my-4'>
 
            <div >
             <h2 className='my-5 mx-3 text-5xl font-bold text-cyan-50'>Looking for a <span className=' text-red-500'>Programming Job?</span> Look No Further !</h2>
@@ -74,13 +76,13 @@ const Home = () => {
 
               <div className='flex justify-center items-center'>
               <div className='grid lg:grid-cols-3 gap-10 md:grid-cols-2 sm:grid-cols-1 '> 
-                {job.map((item) => (
+                {data.slice(0, showAll? 9:6).map((item) => (
         <JobDetails key={item.id} job={item} />
       ))}
     
                 </div>
               </div>
-             <div className='flex justify-center my-4'> <button className="btn btn-info   bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 p-2 m-2 onClick={showAll}"> See All Jobs</button>
+             <div className='flex justify-center my-4' > <button className="btn btn-info   bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 p-2 m-2 " onClick={handleShowAll}> See All Jobs</button>
              
 </div>
     </div>
