@@ -15,9 +15,10 @@ const handleApplyClick = () => {
       {details}
     ;
     localStorage.setItem('jobDetails', JSON.stringify(jobDetails));
-    
-  };
-  
+  }; 
+ 
+
+
 
     return (
        <div>

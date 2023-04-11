@@ -13,7 +13,8 @@ import Blog from './assets/Component/Blog';
 import AppliedJobs from './assets/Component/AppliedJobs';
 import JobDetails from './assets/Component/JobDetails';
 import Job from './assets/Component/Job';
-import Errorpage from './assets/Component/Errorpage';
+
+import ErrorPage from './assets/Component/ErrorPage';
 
 
 
@@ -21,6 +22,8 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout/>,
+    errorElement: <ErrorPage />,
+
     children:[
       {path:"/",
          element:<Home/>,
