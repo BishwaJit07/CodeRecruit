@@ -3,6 +3,9 @@ import React from 'react';
 const Blog = () => {
     return (
         <div>
+            <div className='text-center mt-10 text-white text-2xl font-semibold h-20 bg-gradient-to-r from-sky-500 to-indigo-500 p-4'>
+          <p >  Question & Answer</p>
+        </div>
             <div className='m-4 bg-slate-500 text-white p-2 rounded-xl'> 
                 <h2 className='font-bold text-2xl'>a. When should you use context API?</h2>
                  <p className='text-xl py-2'>The Context API is a way to pass data through the component tree without having to pass props down manually at every level. It can be useful when you have data that needs to be shared between multiple components at different levels of the tree. It's particularly useful for global settings, themes, and authenticated user data.</p>

@@ -36,10 +36,10 @@ const Home = () => {
             <p className='mt-5 mx-6 text-slate-100	 text-2xl '>Welcome to our programming job website, the ultimate resource for job seekers in the tech industry. <br /> We are dedicated to helping talented programmers find the right job that suits their skills and experience.</p><br />
             <Link  to='/AppliedJobs' className="btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 mx-5">Apply Now</Link>
            </div>
-           <img src="https://i.ibb.co/frhQwzc/pngwing-com-1.png" alt="Programmer" className='lg:w-3/5	 lg:h-2/5 md:w-3/5	 md:h-2/5  my-2 ' />
+           <img src="https://i.ibb.co/frhQwzc/pngwing-com-1.png" alt="Programmer" className='lg:w-3/5	 lg:h-2/5 md:w-3/5	 md:h-2/5  m-2 ' />
         </div>
 
-          <div className='m-4'>
+          <div className='m-6'>
             <h2 className='text-center text-white font-bold text-4xl'>Why Choose Our Job Board?
                      </h2>
                      
@@ -82,7 +82,7 @@ const Home = () => {
           </div>
 
               <div className='flex justify-center items-center'>
-              <div className='grid grid-cols-1 gap-10 lg:grid-cols-3 md:grid-cols-2  ' > 
+              <div className='grid grid-cols-1 gap-8 lg:grid-cols-3 md:grid-cols-2  mx-5' > 
                 {data.slice(0, showAll? 9:6).map((item) => (
         <JobDetails key={item.id} job={item} />
       ))}

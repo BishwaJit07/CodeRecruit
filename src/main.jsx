@@ -13,6 +13,7 @@ import Blog from './assets/Component/Blog';
 import AppliedJobs from './assets/Component/AppliedJobs';
 import JobDetails from './assets/Component/JobDetails';
 import Job from './assets/Component/Job';
+import Errorpage from './assets/Component/Errorpage';
 
 
 
@@ -24,10 +25,12 @@ const router = createBrowserRouter([
       {path:"/",
          element:<Home/>,
          loader:()=>fetch('/database.json')
+         
          },
       {
         path: "/AppliedJobs",
     element: <AppliedJobs/>,
+    
       },
       {
         path: "/statistics",
@@ -56,7 +59,7 @@ const router = createBrowserRouter([
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+
       <RouterProvider router={router} />
-  </React.StrictMode>,
+ 
 )
