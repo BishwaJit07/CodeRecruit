@@ -7,7 +7,7 @@ const Header = () => {
     return (
         
       <div >
-        <nav className="navbar   mx-5 ">
+        <nav className="navbar bg-white   ">
   <div className="navbar-start  ">
   <div className="dropdown lg:hidden">
       <label tabIndex={0} className="btn btn-ghost lg:none">
@@ -72,7 +72,7 @@ const Header = () => {
     </div>
   
   <div className="navbar-end mr-5">
-    <Link className="btn bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 text-cyan-100">Get started</Link>
+    <Link  to='/AppliedJobs' className="btn bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 text-cyan-100">Apply Now</Link>
   </div>
 </nav>
       </div>    

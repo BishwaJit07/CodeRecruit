@@ -6,7 +6,7 @@ const Job = () => {
     const details = useLoaderData();
    const {id} = useParams();
 
-   const {job_description , job_responsibility ,educational_requirements ,experiences,salary,job_title,contact_information,location }=details
+   const {job_description , job_responsibility ,educational_requirements ,experiences,salary,job_title,contact_information,location ,company_logo}=details
 
 console.log(id);
 
@@ -15,9 +15,12 @@ console.log(id);
          <div className='text-center mt-10 text-white text-2xl font-semibold h-20 bg-gradient-to-r from-sky-500 to-indigo-500 p-4'>
           <p >  Job Details</p>
         </div>
+        <div className='flex items-center justify-center my-2'>
+            <img src={company_logo} alt="" className='rounded-full'/>
+        </div>
 
-        <div className='flex items-center justify-center h-screen'>
-               <div className='px-4'>
+        <div className='flex flex-col md:flex-row lg:flex-row items-center justify-center '>
+               <div className='px-4 m-3  md:m-0 lg:m-0'>
                <h1 className='mt-5' ><span className=' text-slate-50 font-bold  my-6 '>Job description:</span> {job_description}</h1>
 
                <h1 className='mt-5' ><span className=' text-slate-50 font-bold  my-6 '>Job Responsibility :</span> {job_responsibility}</h1>
@@ -28,7 +31,7 @@ console.log(id);
 
                </div>
 
-               <div className='bg-sky-900 p-5 rounded-xl'>
+               <div className='bg-sky-900 p-5 my-3 rounded-xl'>
                       <h1 className='my-3 text-white font-semibold text-2xl'>Job Details</h1><hr className='my-3'/>
                       <p>Salary : {salary}</p>
                       <p>Job title : {job_title}</p>

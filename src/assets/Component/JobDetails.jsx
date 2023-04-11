@@ -8,7 +8,7 @@ const JobDetails = ({job}) => {
   console.log(job);
     return (
         <div>
-            <div className="card w-96 md:w-3/4 bg-slate-500	shadow-xl text-white">
+            <div className="card w-80 md:w-3/4 bg-slate-500	shadow-xl text-white">
   <figure><img src={company_logo} alt="CompanyLogo" className='w-96   p-2'/></figure>
   <div className="card-body">
     <h2 className="card-title">

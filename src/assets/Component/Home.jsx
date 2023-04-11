@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBusinessTime, faHouseLaptop, faMoneyCheckDollar, faPersonWalkingArrowRight , } from '@fortawesome/free-solid-svg-icons'
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import JobDetails from './JobDetails';
 
 
@@ -27,19 +27,19 @@ const Home = () => {
   };
 
     return ( 
-    <div className='mx-3'>
+    <div className=''>
  
- <div className='flex flex-col md:flex-row lg:flex-row justify-center items-center mx-16 my-4'>
+ <div className='flex flex-col md:flex-row lg:flex-row justify-center items-center mx-4 lg:mx-16 md:mx-16 my-4'>
 
            <div >
             <h2 className='my-5 mx-3 text-5xl font-bold text-cyan-50'>Looking for a <span className=' text-red-500'>Programming Job?</span> Look No Further !</h2>
             <p className='mt-5 mx-6 text-slate-100	 text-2xl '>Welcome to our programming job website, the ultimate resource for job seekers in the tech industry. <br /> We are dedicated to helping talented programmers find the right job that suits their skills and experience.</p><br />
-            <button className="btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 mx-5">Get Started</button>
+            <Link  to='/AppliedJobs' className="btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 mx-5">Apply Now</Link>
            </div>
            <img src="https://i.ibb.co/frhQwzc/pngwing-com-1.png" alt="Programmer" className='lg:w-3/5	 lg:h-2/5 md:w-3/5	 md:h-2/5  my-2 ' />
         </div>
 
-          <div>
+          <div className='m-4'>
             <h2 className='text-center text-white font-bold text-4xl'>Why Choose Our Job Board?
                      </h2>
                      
@@ -48,7 +48,7 @@ const Home = () => {
                    Comprehensive Job Listings: We have a wide range of job listings from top employers in the tech industry, covering different programming languages and specializations.   
                    </p>
 
-                   <div className=' justify-center flex my-6'>
+                   <div className=' justify-center flex my-6 mx-6'>
                    
                   <div className='mx-4 px-2 text-center'>
                   <FontAwesomeIcon icon={faHouseLaptop} className='text-white  text-4xl'/> <br />
