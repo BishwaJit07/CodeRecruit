@@ -4,21 +4,41 @@ import { Link, useLoaderData, useParams } from 'react-router-dom';
 const Job = () => {
 
     const details = useLoaderData();
-   const {id} = useParams();
+   const {} = useParams();
 
-   const {job_description , job_responsibility ,educational_requirements ,experiences,salary,job_title,contact_information,location ,company_logo}=details
+   const {id,job_description , job_responsibility ,educational_requirements ,experiences,salary,job_title,contact_information,location ,company_logo}= details;
 
 
 
-const handleApplyClick = () => {
-    const jobDetails = 
-      {details}
-    ;
+// const handleApplyClick = () => {
+//     const jobDetails = 
+//       {details}
+//     ;
+//     localStorage.setItem('jobDetails', JSON.stringify(jobDetails));
+//   }; 
+
+// const handleApplyClick = (details) => {
+//     console.log('object added',details);
+    
+//   }; 
+
+  
+const handleApplyClick = (details) => {
+  let jobDetails = JSON.parse(localStorage.getItem('jobDetails')) || [];
+  const jobId = details.id;
+  const jobExists = jobDetails.some((job) => job.id === jobId);
+
+  if (!jobExists) {
+    jobDetails.push(details);
     localStorage.setItem('jobDetails', JSON.stringify(jobDetails));
-  }; 
+    console.log('New job added to localStorage:', details);
+  } else {
+    console.log('Job already exists in localStorage:', details);
+  }
+};
  
-
-
+ 
+// const addToCArtWithParams =()=> handleApplyClick(id);
 
     return (
        <div>
@@ -50,11 +70,12 @@ const handleApplyClick = () => {
                       <h1 className='my-3  text-white font-semibold text-2xl underline'>Contact Information</h1>
                       <p>Phone : {contact_information.phone}</p>
                       <p>Address : {location} </p>
-                      <Link  to='/AppliedJobs' className='btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 p-2 m-2' onClick={handleApplyClick}>Apply Now</Link>
+                      {/* <Link  to='/AppliedJobs' className='btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 p-2 m-2' onClick={handleApplyClick}>Apply Now</Link> */}
+                      <Link to='/AppliedJobs' className='btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 p-2 m-2' onClick={()=> handleApplyClick(details)}> Apply Now</Link>
                </div>
         </div>
        </div>
     );
 };
 
-export default Job;
+export default Job; 
