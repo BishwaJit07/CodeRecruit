@@ -57,14 +57,14 @@ const Home = () => {
                    Comprehensive Job Listings: We have a wide range of job listings from top employers in the tech industry, covering different programming languages and specializations.   
                    </p>
 
-                   <div className=' justify-center flex my-6 mx-6'>
+                   <div className=' flex justify-center items-center text-center  my-6 mx-6'>
                   
 
 
                 
 
 {fetuares.map(feature => (
-      <div key={feature.name}>
+      <div key={feature.name} className=' flex flex-col justify-center items-center text-center  my-6 mx-6'>
        <img src={feature.logo} alt="" className=' rounded-full w-20 '/>
 
        
@@ -82,8 +82,13 @@ const Home = () => {
           </div>
 
 {/* card part  */}
-
+         <h2 className='text-center text-white font-bold text-4xl my-5'>Chek Out our Latest Job!
+                     </h2>
+                     <p className='text-center m-6'>
+                     we also offer additional resources for job seekers, such as career advice, resume and cover letter templates, interview tips, and coding challenges to help them showcase their skills to potential employers.   
+                   </p>
               <div className='flex justify-center items-center'>
+                
               <div className='grid grid-cols-1 gap-8 lg:grid-cols-3 md:grid-cols-2  mx-5' > 
                 {data.slice(0, showAll? 9:6).map((item) => (
         <JobDetails key={item.id} job={item} />
