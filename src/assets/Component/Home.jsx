@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBusinessTime, faHouseLaptop, faMoneyCheckDollar, faPersonWalkingArrowRight , } from '@fortawesome/free-solid-svg-icons'
@@ -11,9 +11,14 @@ const Home = () => {
   const [job,setJob]=useState({});
  
 
-  
+  const [fetuares, setFetuares] = useState([]);
+  useEffect(() => {
+    fetch('fetuares.json')
+        .then(res => res.json())
+        .then(data => setFetuares(data))
+}, []);
+  console.log(fetuares); 
 
-   
   const [showAll,setShowAll] = useState(false);
   const handleShowAll = () => {
     setShowAll(true);
@@ -39,6 +44,10 @@ const Home = () => {
            <img src="https://i.ibb.co/frhQwzc/pngwing-com-1.png" alt="Programmer" className='lg:w-3/5	 lg:h-2/5 md:w-3/5	 md:h-2/5  m-2 ' />
         </div>
 
+
+{/* website fetuare  */}
+
+
           <div className='m-6'>
             <h2 className='text-center text-white font-bold text-4xl'>Why Choose Our Job Board?
                      </h2>
@@ -49,37 +58,30 @@ const Home = () => {
                    </p>
 
                    <div className=' justify-center flex my-6 mx-6'>
-                   
-                  <div className='mx-4 px-2 text-center'>
-                  <FontAwesomeIcon icon={faHouseLaptop} className='text-white  text-4xl'/> <br />
-                  <h4 className=' font-semibold text-white'>Remote Job</h4> 
-                  <p>More Than 100+ Job Avilable</p>
-                  </div>
+                  
 
-                  <div className='mx-4 px-2 text-center'>
-                  <FontAwesomeIcon icon={faPersonWalkingArrowRight} className='text-white  text-4xl'/>
-                  <br />
-                  <h4 className=' font-semibold text-white'>Onsite Job</h4> 
-                  <p>More Than 400+ Job Avilable</p>
-                  </div>
 
-                  <div className='mx-4 px-2 text-center'>
-                  <FontAwesomeIcon icon={faBusinessTime} className='text-white  text-4xl'/>
-                  <br />
-                  <h4 className=' font-semibold text-white'>Full-time </h4> 
-                  <p>More Than 300+ Job Avilable</p>
-                  </div>
+                
 
-                  <div className='mx-4 px-2 text-center'>
-                  <FontAwesomeIcon icon={faMoneyCheckDollar}  className='text-white  text-4xl'/>
-                  <br />
-                  <h4 className=' font-semibold text-white'>Rich Salary </h4> 
-                  <p>More Than 550+ Job Avilable</p>
-                  </div>
+{fetuares.map(feature => (
+      <div key={feature.name}>
+       <img src={feature.logo} alt="" className=' rounded-full w-20 '/>
+
+       
+        <h4 className=' font-semibold text-white'>{feature.name}</h4> 
+        <p>{feature.jobs_available}</p>
+      </div>
+    ))}
+
+                 
+
+                
                   
                   
                    </div>
           </div>
+
+{/* card part  */}
 
               <div className='flex justify-center items-center'>
               <div className='grid grid-cols-1 gap-8 lg:grid-cols-3 md:grid-cols-2  mx-5' > 

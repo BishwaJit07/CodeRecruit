@@ -1,7 +1,7 @@
 const addToDb = id => {
     let shoppingCart = {}
   
-    //get the shopping cart from local storage
+    //get the shopping cart from local storage localStorage.setItem('jobDetails', JSON.stringify(jobDetails));
     const storedCart = localStorage.getItem('shopping-cart')
     if (storedCart) {
       shoppingCart = JSON.parse(storedCart)

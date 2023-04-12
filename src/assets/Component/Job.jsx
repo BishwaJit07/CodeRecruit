@@ -8,7 +8,7 @@ const Job = () => {
 
    const {job_description , job_responsibility ,educational_requirements ,experiences,salary,job_title,contact_information,location ,company_logo}=details
 
-console.log(id);
+
 
 const handleApplyClick = () => {
     const jobDetails = 

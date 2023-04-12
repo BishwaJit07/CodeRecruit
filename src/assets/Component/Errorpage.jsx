@@ -9,7 +9,7 @@ const ErrorPage = () => {
   return (
     <section className='flex items-center h-screen p-16 bg-gray-100 text-gray-900'>
       <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8'>
-      <FontAwesomeIcon className='w-40 h-40 text-gray-600' icon={faFaceSadCry} />
+      <img src="https://www.kindpng.com/picc/m/255-2550104_404-error-page-png-transparent-png.png" className='w-80' alt="" />
         <div className='max-w-md text-center'>
           <h2 className='mb-8 font-extrabold text-9xl text-red-600'>
             <span className='sr-only'>Error</span> {status || 404}
