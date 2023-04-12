@@ -25,7 +25,7 @@ const Header = () => {
             </Link>
           </li>
           <li tabIndex={0}>
-            <Link to='/AppliedJobs' className={location.pathname === '/AppliedJobs' ? 'mx-2 text-red-500' : 'mx-2'}>
+            <Link to='/appliedJobs' className={location.pathname === '/appliedJobs' ? 'mx-2 text-red-500' : 'mx-2'}>
               Apply For Jobs
             </Link>
           </li>
@@ -58,7 +58,7 @@ const Header = () => {
             </Link>
           </li>
           <li tabIndex={0}>
-            <Link to='/AppliedJobs' className={location.pathname === '/AppliedJobs' ? 'mx-2 text-red-500' : 'mx-2'}>
+            <Link to='/appliedJobs' className={location.pathname === '/appliedJobs' ? 'mx-2 text-red-500' : 'mx-2'}>
               Apply For Jobs
             </Link>
           </li>
@@ -72,7 +72,7 @@ const Header = () => {
     </div>
   
   <div className="navbar-end mr-5">
-    <Link  to='/AppliedJobs' className="btn bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 text-cyan-100">Apply Now</Link>
+    <Link  to='/appliedJobs' className="btn bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 text-cyan-100">Apply Now</Link>
   </div>
 </nav><hr className='border-slate-400 my-2' />
       </div>    

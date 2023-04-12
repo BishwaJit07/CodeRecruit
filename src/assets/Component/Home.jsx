@@ -39,7 +39,7 @@ const Home = () => {
            <div >
             <h2 className='my-5 mx-3 text-5xl font-bold text-cyan-50'>Looking for a <span className=' text-red-500'>Programming Job?</span> Look No Further !</h2>
             <p className='mt-5 mx-6 text-slate-100	 text-2xl '>Welcome to our programming job website, the ultimate resource for job seekers in the tech industry. <br /> We are dedicated to helping talented programmers find the right job that suits their skills and experience.</p><br />
-            <Link  to='/AppliedJobs' className="btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 mx-5">Apply Now</Link>
+            <Link  to='/appliedJobs' className="btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 mx-5">Apply Now</Link>
            </div>
            <img src="https://i.ibb.co/frhQwzc/pngwing-com-1.png" alt="Programmer" className='lg:w-3/5	 lg:h-2/5 md:w-3/5	 md:h-2/5  m-2 ' />
         </div>

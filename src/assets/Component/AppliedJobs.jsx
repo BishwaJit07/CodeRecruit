@@ -24,8 +24,8 @@ console.log(appliedJobs);
             <div>
                 {appliedJobs.map((job, index) => {
  console.log(job);
-                    return  <div key={index} className='flex flex-col md:flex-row lg-flex-col justify-evenly  items-center text-center mx-40 my-5   border '>
-                    <img src={job.company_logo} alt=""  className="h-40 w-60 object-cover object-center" />
+                    return  <div key={index} className='flex flex-col md:flex-row lg-flex-col justify-evenly  items-center text-center mx-4 md:mx-20 lg:mx-40 my-5   outline-1	 '>
+                    <img src={job.company_logo} alt=""  className="h-40 w-60 object-cover object-center p-2" />
                      <div className='mx-2 text-white'>
                         <p className='font-bold text-xl'>{job.company_name}</p> 
                     <div className='flex '><p className='m-2 badge badge-outline text-amber-300'>{job.remote_or_onsite}</p> 

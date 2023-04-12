@@ -10,7 +10,7 @@ import Home from './assets/Component/Home';
 import MainLayout from './assets/Component/Layout/MainLayout';
 import Statistics from './assets/Component/Statistics';
 import Blog from './assets/Component/Blog';
-import AppliedJobs from './assets/Component/AppliedJobs';
+import AppliedJobs from './assets/Component/appliedJobs';
 import JobDetails from './assets/Component/JobDetails';
 import Job from './assets/Component/Job';
 
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
          
          },
       {
-        path: "/AppliedJobs",
+        path: "/appliedJobs",
     element: <AppliedJobs/>,
     
       },

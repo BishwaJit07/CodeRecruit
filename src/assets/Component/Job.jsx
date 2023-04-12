@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { addToDB } from '../../uitilities/fakeDB';
 
 const Job = () => {
 
@@ -38,7 +39,9 @@ const handleApplyClick = (details) => {
 };
  
  
-// const addToCArtWithParams =()=> handleApplyClick(id);
+// const handleApplyClick =(details)=>{ addToDB(details)
+// }
+
 
     return (
        <div>
@@ -84,7 +87,10 @@ Phone : {contact_information.phone}</p>
 </svg>
  Address : {location} </p>
                     
-                      <Link to='/AppliedJobs' className='btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 p-2 m-3' onClick={()=> handleApplyClick(details)}> Apply Now</Link>
+                      {/* <Link  className='btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 p-2 m-3' onClick={handleApplyClick
+                      }> Apply Now</Link> */}
+
+                      <Link to='/appliedJobs' className='btn btn-info bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-400 p-2 m-3' onClick={()=> handleApplyClick(details)}> Apply Now</Link>
                </div>
         </div>
        </div>
