@@ -1,6 +1,6 @@
 Live link : https://hire_prgrammen.surge.sh/
 
-!as it is surge link link may be defferent as we get link after deploy!
+
 
 Best features of My project-
 
